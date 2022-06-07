@@ -11,7 +11,7 @@
     <div id="wrapper">
         <h1>About me</h1>
         <hr>
-        <img src="./images/photo.jpg" id="my_photo"><br>
+        <img src="./images/photo.jpg" id="my_photo" alt="my_photo"><br>
         <b>Name:</b> Anastasia<br>
         <b>Surname:</b> Gulyaeva<br>
         <b>Birthday:</b> 11.02.2004<br>
@@ -33,21 +33,24 @@
         <h1>Code Example</h1>
         <hr>
         <p class="ex">
-            var images = ['tshirt-b.png','p2.png', '2.jpg'];<br>
-            var slider = document.querySelector('#slider');<br>
-            var img = slider.querySelector('img');<br>
-            var i = 0;<br>
-            img.src = images[0];<br>
-            var texts = ["COWHIDE STANDART CREW","BRANDED T-SHIRT","SUPER BRAND"];<br>
-            var elem = document.querySelector('.elem');<br>
-            elem.innerHTML = texts[0];<br>
-            window.setInterval(function() {<br>
-            img.src = images[i];<br>
-            elem.innerHTML = texts[i];<br>
-            i++;<br>
-            if (i == images.length && i == texts.length) {<br>
-            i = 0;<br>}
-            }, 1500);<br>
+            function getNumber() {<br>
+                var elems = document.getElementsByTagName('p');<br>
+                for (var i = 0; i < elems.length; i++) {<br>
+                    elems[i].innerHTML = i + 1;<br>
+                }<br>
+            }<br>
+            function zzz() {<br>
+                var elems = document.getElementsByClassName('zzz');<br>
+                for (var i = 0; i < elems.length; i++) {<br>
+                    elems[i].innerHTML = i + 1;<br>
+                }<br>
+            }<br>
+            function getNewAdr(newLock) {<br>
+                window.location.href = newLock;<br>
+            }<br>
+            function calc(a,b,name){<br>
+                document.getElementById(name).value = Number(a)+Number(b);<br>
+            }<br>
         </p>
         <h1>Language Level</h1>
         <hr>

@@ -1,12 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV-Nasstasisss</title>
 </head>
+
 <body>
-    
+    <div id="wrapper">
+        <h1>About me</h1>
+        <hr>
+        <b>Name:</b> Anastasia<br>
+        <b>Surname:</b> Gulyaeva<br>
+        <b>Birthday:</b> 11.02.2004<br>
+        <h1>Contact Information</h1>
+        <hr>
+        <b>Email:</b> sword981nastya@gmail.com<br>
+        <b>Github:</b><a href="https://github.com/Nasstasisss"> Nasstasisss</a><br>
+        <h1>Education</h1>
+        <hr>
+        <b>Minsk State College of Electronics - </b> software engineer (in training);
+        <h1>Skils</h1>
+        <hr>
+        <ul>
+            <li>HTML,CSS</li>
+            <li>С#, C++</li>
+            <li>JAVA, JavaScript</li>
+            <li>SQL, MySQL</li>
+        </ul>
+        <h1>Code Example</h1>
+        <hr>
+        <p class="ex">
+            var images = ['tshirt-b.png','p2.png', '2.jpg'];<br>
+            var slider = document.querySelector('#slider');<br>
+            var img = slider.querySelector('img');<br>
+            var i = 0;<br>
+            img.src = images[0];<br>
+            var texts = ["COWHIDE STANDART CREW","BRANDED T-SHIRT","SUPER BRAND"];<br>
+            var elem = document.querySelector('.elem');<br>
+            elem.innerHTML = texts[0];<br>
+            window.setInterval(function() {<br>
+            img.src = images[i];<br>
+            elem.innerHTML = texts[i];<br>
+            i++;<br>
+            if (i == images.length && i == texts.length) {<br>
+            i = 0;<br>}
+            }, 1500);<br>
+        </p>
+        <h1>Language Level</h1>
+        <hr>
+        <p>For several years I studied with a group with a tutor. I passed the CT with 98 points out of 100. At the moment I speak English at the level of B1-B2. I also studied profile English as a specialty.</p>
+    </div>
 </body>
+
 </html>
